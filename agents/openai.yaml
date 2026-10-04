@@ -1,0 +1,12 @@
+interface:
+  display_name: Project Brain
+  short_description: Development stack: memory, gates, security baseline, workflows, agent-neutral tools
+  default_prompt: Use Project Brain to analyze, plan, track, design, secure, implement,
+    and preserve context for this software project.
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="1200" height="600" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1220"/><stop offset="1" stop-color="#111a33"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="600" rx="20" fill="url(#bg2)"/>
+  <text x="600" y="52" text-anchor="middle" font-size="28" font-weight="700" fill="#F8FAFC">What is inside the skill</text>
+  <text x="600" y="82" text-anchor="middle" font-size="16" fill="#94A3B8">One entry file routes every task to the smallest set of knowledge and tools it needs</text>
+
+  <!-- connectors -->
+  <g stroke="#334155" stroke-width="2">
+    <line x1="600" y1="300" x2="230" y2="170"/><line x1="600" y1="300" x2="230" y2="300"/><line x1="600" y1="300" x2="230" y2="430"/>
+    <line x1="600" y1="300" x2="970" y2="170"/><line x1="600" y1="300" x2="970" y2="300"/><line x1="600" y1="300" x2="970" y2="430"/>
+    <line x1="600" y1="300" x2="600" y2="520"/>
+  </g>
+
+  <!-- center -->
+  <rect x="455" y="215" width="290" height="170" rx="18" fill="#1e1b4b" stroke="#6366F1" stroke-width="3"/>
+  <text x="600" y="255" text-anchor="middle" font-size="24" font-weight="700" fill="#F8FAFC">SKILL.md</text>
+  <text x="600" y="285" text-anchor="middle" font-size="14" fill="#C7D2FE">14 commitments</text>
+  <text x="600" y="307" text-anchor="middle" font-size="14" fill="#C7D2FE">router (cheapest correct path)</text>
+  <text x="600" y="329" text-anchor="middle" font-size="14" fill="#C7D2FE">18 playbooks, execution loop</text>
+  <text x="600" y="351" text-anchor="middle" font-size="14" fill="#C7D2FE">owner gates, reporting</text>
+
+  <g font-size="14">
+    <rect x="40" y="115" width="380" height="110" rx="14" fill="#16213f" stroke="#14B8A6" stroke-width="2"/>
+    <text x="60" y="147" font-size="18" font-weight="700" fill="#F8FAFC">references/  knowledge library</text>
+    <text x="60" y="173" fill="#CBD5E1">system engineering method, database, backend,</text>
+    <text x="60" y="195" fill="#CBD5E1">API, security baseline, UI, mobile, desktop,</text>
+    <text x="60" y="217" fill="#CBD5E1">payments, operations, glossary (load on demand)</text>
+
+    <rect x="40" y="245" width="380" height="110" rx="14" fill="#16213f" stroke="#F59E0B" stroke-width="2"/>
+    <text x="60" y="277" font-size="18" font-weight="700" fill="#F8FAFC">assets/production-docs/</text>
+    <text x="60" y="303" fill="#CBD5E1">31 templates scaffolded into your repo:</text>
+    <text x="60" y="325" fill="#CBD5E1">product, domain, architecture, data, API,</text>
+    <text x="60" y="347" fill="#CBD5E1">security, ops, testing, release, ADRs</text>
+
+    <rect x="40" y="375" width="380" height="110" rx="14" fill="#16213f" stroke="#EF4444" stroke-width="2"/>
+    <text x="60" y="407" font-size="18" font-weight="700" fill="#F8FAFC">scripts/  deterministic gates</text>
+    <text x="60" y="433" fill="#CBD5E1">plan_check, code_guard, vuln_scan, secret_scan,</text>
+    <text x="60" y="455" fill="#CBD5E1">i18n_check, pb.py (CLI for any coding agent),</text>
+    <text x="60" y="477" fill="#CBD5E1">hooks, install / uninstall</text>
+
+    <rect x="780" y="115" width="380" height="110" rx="14" fill="#16213f" stroke="#22C55E" stroke-width="2"/>
+    <text x="800" y="147" font-size="18" font-weight="700" fill="#F8FAFC">agents/  subagents</text>
+    <text x="800" y="173" fill="#CBD5E1">implementer, verifier (never fixes),</text>
+    <text x="800" y="195" fill="#CBD5E1">code reviewer, security reviewer,</text>
+    <text x="800" y="217" fill="#CBD5E1">UI auditor (real browser)</text>
+
+    <rect x="780" y="245" width="380" height="110" rx="14" fill="#16213f" stroke="#A855F7" stroke-width="2"/>
+    <text x="800" y="277" font-size="18" font-weight="700" fill="#F8FAFC">workflows/  multi-agent runs</text>
+    <text x="800" y="303" fill="#CBD5E1">plan from PRD, follow the project map,</text>
+    <text x="800" y="325" fill="#CBD5E1">execute, review, security audit, UI audit,</text>
+    <text x="800" y="347" fill="#CBD5E1">asset batch; budget guard (12 agents max)</text>
+
+    <rect x="780" y="375" width="380" height="110" rx="14" fill="#16213f" stroke="#38BDF8" stroke-width="2"/>
+    <text x="800" y="407" font-size="18" font-weight="700" fill="#F8FAFC">Optional helpers</text>
+    <text x="800" y="433" fill="#CBD5E1">Codex CLI: images and trivial edits (cheap)</text>
+    <text x="800" y="455" fill="#CBD5E1">graphify: code graph (find, impact)</text>
+    <text x="800" y="477" fill="#CBD5E1">third-party UI and review modules</text>
+  </g>
+
+  <rect x="330" y="515" width="540" height="62" rx="14" fill="#10243a" stroke="#38BDF8" stroke-width="2"/>
+  <text x="600" y="543" text-anchor="middle" font-size="17" font-weight="700" fill="#F8FAFC">Your repository</text>
+  <text x="600" y="566" text-anchor="middle" font-size="14" fill="#CBD5E1">docs/  .project-brain/ memory  AGENTS.md  git pre-commit gate</text>
+</svg>

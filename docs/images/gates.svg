@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 470" width="1200" height="470" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1220"/><stop offset="1" stop-color="#111a33"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="470" rx="20" fill="url(#bg3)"/>
+  <text x="600" y="52" text-anchor="middle" font-size="28" font-weight="700" fill="#F8FAFC">The four delivery gates</text>
+  <text x="600" y="82" text-anchor="middle" font-size="16" fill="#94A3B8">Cumulative: a gate fails while an earlier one fails.  python scripts/pb.py plan --gate &lt;name&gt;</text>
+
+  <g font-size="14">
+    <rect x="40" y="115" width="260" height="300" rx="14" fill="#16213f" stroke="#6366F1" stroke-width="2"/>
+    <rect x="40" y="115" width="260" height="46" rx="14" fill="#6366F1"/>
+    <text x="170" y="145" text-anchor="middle" font-size="18" font-weight="700" fill="#fff">1  Product ready</text>
+    <text x="58" y="190" fill="#CBD5E1">Problem, goals, non-goals</text>
+    <text x="58" y="214" fill="#CBD5E1">FR-xxx with acceptance</text>
+    <text x="58" y="238" fill="#CBD5E1">BR-xxx rules that never break</text>
+    <text x="58" y="262" fill="#CBD5E1">NFR-xxx with numbers</text>
+    <text x="58" y="286" fill="#CBD5E1">Out of scope stated</text>
+    <text x="58" y="380" fill="#A5B4FC" font-size="13">Blocks: domain and</text>
+    <text x="58" y="398" fill="#A5B4FC" font-size="13">architecture work</text>
+
+    <rect x="320" y="115" width="260" height="300" rx="14" fill="#16213f" stroke="#14B8A6" stroke-width="2"/>
+    <rect x="320" y="115" width="260" height="46" rx="14" fill="#14B8A6"/>
+    <text x="450" y="145" text-anchor="middle" font-size="18" font-weight="700" fill="#0B1220">2  Engineering ready</text>
+    <text x="338" y="190" fill="#CBD5E1">Domain, contexts, ownership</text>
+    <text x="338" y="214" fill="#CBD5E1">System design, SPOFs, flows</text>
+    <text x="338" y="238" fill="#CBD5E1">Data plan 35/35</text>
+    <text x="338" y="262" fill="#CBD5E1">API errors, state machines</text>
+    <text x="338" y="286" fill="#CBD5E1">Threat model, events, ADRs</text>
+    <text x="338" y="380" fill="#5EEAD4" font-size="13">Blocks: migrations and</text>
+    <text x="338" y="398" fill="#5EEAD4" font-size="13">module code</text>
+
+    <rect x="600" y="115" width="260" height="300" rx="14" fill="#16213f" stroke="#F59E0B" stroke-width="2"/>
+    <rect x="600" y="115" width="260" height="46" rx="14" fill="#F59E0B"/>
+    <text x="730" y="145" text-anchor="middle" font-size="18" font-weight="700" fill="#0B1220">3  Implementation ready</text>
+    <text x="618" y="190" fill="#CBD5E1">Test strategy</text>
+    <text x="618" y="214" fill="#CBD5E1">Every FR/BR has a TEST-xxx</text>
+    <text x="618" y="238" fill="#CBD5E1">Every FR has a work item</text>
+    <text x="618" y="262" fill="#CBD5E1">Roadmap with exit criteria</text>
+    <text x="618" y="286" fill="#CBD5E1">Staging environment</text>
+    <text x="618" y="380" fill="#FCD34D" font-size="13">Blocks: starting a</text>
+    <text x="618" y="398" fill="#FCD34D" font-size="13">release's implementation</text>
+
+    <rect x="880" y="115" width="280" height="300" rx="14" fill="#16213f" stroke="#22C55E" stroke-width="2"/>
+    <rect x="880" y="115" width="280" height="46" rx="14" fill="#22C55E"/>
+    <text x="1020" y="145" text-anchor="middle" font-size="18" font-weight="700" fill="#0B1220">4  Production ready</text>
+    <text x="898" y="190" fill="#CBD5E1">Observability, SLOs, alerts</text>
+    <text x="898" y="214" fill="#CBD5E1">Backup with a tested restore</text>
+    <text x="898" y="238" fill="#CBD5E1">Rollback, runbook, incidents</text>
+    <text x="898" y="262" fill="#CBD5E1">Readiness checklist ticked</text>
+    <text x="898" y="286" fill="#CBD5E1">with evidence on each line</text>
+    <text x="898" y="380" fill="#86EFAC" font-size="13">Blocks: the first release and</text>
+    <text x="898" y="398" fill="#86EFAC" font-size="13">risky ones (money, auth, data)</text>
+  </g>
+  <text x="600" y="448" text-anchor="middle" font-size="13" fill="#64748B">Unfilled templates never count: each starts with a marker line that plan_check ignores until it is removed.</text>
+</svg>

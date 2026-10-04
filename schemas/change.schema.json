@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Project Brain Change Event",
+  "type": "object",
+  "required": ["id", "timestamp", "task", "type", "summary", "reason", "files", "requirements", "tests", "security_effect", "breaking", "known_issues"],
+  "properties": {
+    "id": {"type": "string"},
+    "timestamp": {"type": "string", "format": "date-time"},
+    "task": {"type": "string"},
+    "type": {"enum": ["feat", "fix", "refactor", "docs", "test", "security", "config", "migration", "revert"]},
+    "summary": {"type": "string"},
+    "reason": {"type": "string"},
+    "files": {"type": "array", "items": {"type": "string"}},
+    "requirements": {"type": "array", "items": {"type": "string"}},
+    "tests": {"type": "array", "items": {"type": "string"}},
+    "security_effect": {"enum": ["reduced", "neutral", "increased", "unknown"]},
+    "breaking": {"type": "boolean"},
+    "known_issues": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": true
+}

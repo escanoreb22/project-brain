@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Project Brain Task",
+  "type": "object",
+  "required": ["id", "objective", "status", "requirements", "depends_on", "allowed_paths", "forbidden_paths", "invariants", "acceptance", "tests", "security_checks", "observability", "rollback", "done_evidence"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^TASK-[A-Z0-9-]+$"},
+    "objective": {"type": "string", "minLength": 8},
+    "status": {"enum": ["proposed", "clarified", "ready", "in_progress", "blocked", "implemented", "verified", "accepted", "released", "deprecated"]},
+    "requirements": {"type": "array", "items": {"type": "string"}},
+    "depends_on": {"type": "array", "items": {"type": "string"}},
+    "allowed_paths": {"type": "array", "items": {"type": "string"}},
+    "forbidden_paths": {"type": "array", "items": {"type": "string"}},
+    "invariants": {"type": "array", "items": {"type": "string"}},
+    "acceptance": {"type": "array", "items": {"type": "string"}},
+    "tests": {"type": "array", "items": {"type": "string"}},
+    "security_checks": {"type": "array", "items": {"type": "string"}},
+    "observability": {"type": "array", "items": {"type": "string"}},
+    "rollback": {"type": "string"},
+    "done_evidence": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": true
+}

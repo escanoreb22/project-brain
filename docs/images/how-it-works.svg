@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="1200" height="640" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1220"/><stop offset="1" stop-color="#111a33"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#94A3B8"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="640" rx="20" fill="url(#bg)"/>
+  <text x="600" y="54" text-anchor="middle" font-size="28" font-weight="700" fill="#F8FAFC">How project-brain works</text>
+  <text x="600" y="84" text-anchor="middle" font-size="16" fill="#94A3B8">You describe the product. The agent plans, builds and verifies it like an engineering team.</text>
+
+  <!-- step boxes -->
+  <g font-size="15">
+    <rect x="40" y="130" width="200" height="230" rx="14" fill="#16213f" stroke="#6366F1" stroke-width="2"/>
+    <circle cx="70" cy="160" r="16" fill="#6366F1"/><text x="70" y="166" text-anchor="middle" font-weight="700" fill="#fff">1</text>
+    <text x="96" y="166" font-size="19" font-weight="700" fill="#F8FAFC">Describe</text>
+    <text x="60" y="205" fill="#CBD5E1">Your idea in plain</text>
+    <text x="60" y="227" fill="#CBD5E1">words:</text>
+    <text x="60" y="262" fill="#A5B4FC" font-family="Consolas, monospace" font-size="13">/project-brain</text>
+    <text x="60" y="282" fill="#A5B4FC" font-family="Consolas, monospace" font-size="13">I want to build ...</text>
+    <text x="60" y="325" fill="#CBD5E1">Your profile sets the</text>
+    <text x="60" y="347" fill="#CBD5E1">language and level.</text>
+
+    <rect x="270" y="130" width="200" height="230" rx="14" fill="#16213f" stroke="#14B8A6" stroke-width="2"/>
+    <circle cx="300" cy="160" r="16" fill="#14B8A6"/><text x="300" y="166" text-anchor="middle" font-weight="700" fill="#0B1220">2</text>
+    <text x="326" y="166" font-size="19" font-weight="700" fill="#F8FAFC">Plan</text>
+    <text x="290" y="205" fill="#CBD5E1">Brief, PRD (23 parts)</text>
+    <text x="290" y="227" fill="#CBD5E1">Business rules, NFRs</text>
+    <text x="290" y="249" fill="#CBD5E1">Domain, architecture</text>
+    <text x="290" y="271" fill="#CBD5E1">Data plan (35 items)</text>
+    <text x="290" y="293" fill="#CBD5E1">API, security, ops</text>
+    <text x="290" y="315" fill="#CBD5E1">Tests, backlog, ADRs</text>
+    <text x="290" y="347" fill="#5EEAD4" font-size="13">31 templates, one per doc</text>
+
+    <rect x="500" y="130" width="200" height="230" rx="14" fill="#16213f" stroke="#F59E0B" stroke-width="2"/>
+    <circle cx="530" cy="160" r="16" fill="#F59E0B"/><text x="530" y="166" text-anchor="middle" font-weight="700" fill="#0B1220">3</text>
+    <text x="556" y="166" font-size="19" font-weight="700" fill="#F8FAFC">Gates</text>
+    <text x="520" y="205" fill="#CBD5E1">Product ready</text>
+    <text x="520" y="230" fill="#CBD5E1">Engineering ready</text>
+    <text x="520" y="255" fill="#CBD5E1">Implementation ready</text>
+    <text x="520" y="280" fill="#CBD5E1">Production ready</text>
+    <text x="520" y="325" fill="#FCD34D" font-size="13">Checked by plan_check.py:</text>
+    <text x="520" y="345" fill="#FCD34D" font-size="13">no evidence, no pass</text>
+
+    <rect x="730" y="130" width="200" height="230" rx="14" fill="#16213f" stroke="#22C55E" stroke-width="2"/>
+    <circle cx="760" cy="160" r="16" fill="#22C55E"/><text x="760" y="166" text-anchor="middle" font-weight="700" fill="#0B1220">4</text>
+    <text x="786" y="166" font-size="19" font-weight="700" fill="#F8FAFC">Build loop</text>
+    <text x="750" y="205" fill="#CBD5E1">Acceptance criterion</text>
+    <text x="750" y="227" fill="#CBD5E1">Smallest correct change</text>
+    <text x="750" y="249" fill="#CBD5E1">Verify on the real stack</text>
+    <text x="750" y="271" fill="#CBD5E1">Sync docs and map</text>
+    <text x="750" y="293" fill="#CBD5E1">Next item</text>
+    <text x="750" y="335" fill="#86EFAC" font-size="13">Asks you only at real</text>
+    <text x="750" y="353" fill="#86EFAC" font-size="13">decisions, with a default</text>
+
+    <rect x="960" y="130" width="200" height="230" rx="14" fill="#16213f" stroke="#A855F7" stroke-width="2"/>
+    <circle cx="990" cy="160" r="16" fill="#A855F7"/><text x="990" y="166" text-anchor="middle" font-weight="700" fill="#fff">5</text>
+    <text x="1016" y="166" font-size="19" font-weight="700" fill="#F8FAFC">Release</text>
+    <text x="980" y="205" fill="#CBD5E1">Readiness checklist</text>
+    <text x="980" y="227" fill="#CBD5E1">ticked with evidence</text>
+    <text x="980" y="262" fill="#CBD5E1">Backups, monitoring,</text>
+    <text x="980" y="284" fill="#CBD5E1">rollback, runbook</text>
+    <text x="980" y="325" fill="#D8B4FE" font-size="13">Handoff saved for the</text>
+    <text x="980" y="345" fill="#D8B4FE" font-size="13">next session</text>
+  </g>
+  <g stroke="#94A3B8" stroke-width="2" marker-end="url(#arrow)">
+    <line x1="242" y1="245" x2="266" y2="245"/>
+    <line x1="472" y1="245" x2="496" y2="245"/>
+    <line x1="702" y1="245" x2="726" y2="245"/>
+    <line x1="932" y1="245" x2="956" y2="245"/>
+  </g>
+
+  <!-- guard rail -->
+  <rect x="40" y="400" width="1120" height="110" rx="14" fill="#1b1430" stroke="#EF4444" stroke-width="2" stroke-dasharray="6 5"/>
+  <text x="64" y="436" font-size="19" font-weight="700" fill="#F8FAFC">Always-on guards</text>
+  <text x="64" y="462" font-size="14" fill="#CBD5E1">Run after every edit (Claude Code hooks) and before every commit (git pre-commit gate, any agent or human)</text>
+  <g font-size="13" font-family="Consolas, monospace">
+    <rect x="64" y="474" width="280" height="26" rx="6" fill="#2a1d45"/><text x="76" y="492" fill="#FCA5A5">code_guard: duplicates, long code</text>
+    <rect x="356" y="474" width="260" height="26" rx="6" fill="#2a1d45"/><text x="368" y="492" fill="#FCA5A5">vuln_scan: 14 weakness classes</text>
+    <rect x="628" y="474" width="220" height="26" rx="6" fill="#2a1d45"/><text x="640" y="492" fill="#FCA5A5">secret_scan: leaked keys</text>
+    <rect x="860" y="474" width="220" height="26" rx="6" fill="#2a1d45"/><text x="872" y="492" fill="#FCA5A5">i18n_check: translations</text>
+  </g>
+  <line x1="600" y1="362" x2="600" y2="398" stroke="#EF4444" stroke-width="2" stroke-dasharray="4 4"/>
+
+  <!-- memory -->
+  <rect x="40" y="535" width="1120" height="70" rx="14" fill="#10243a" stroke="#38BDF8" stroke-width="2"/>
+  <text x="64" y="566" font-size="19" font-weight="700" fill="#F8FAFC">Project memory</text>
+  <text x="64" y="590" font-size="14" fill="#CBD5E1">.project-brain/ in your repo: decisions, change log, task state and handoffs, so any session or any agent resumes exactly where the last one stopped.</text>
+</svg>

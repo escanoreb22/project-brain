@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Project Brain Structure",
+  "type": "object",
+  "required": ["schema_version", "paths"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "paths": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["path", "domain", "responsibility", "requirements", "tests"],
+        "properties": {
+          "path": {"type": "string"},
+          "domain": {"type": "string", "description": "Domain owner (team or module name)"},
+          "responsibility": {"type": "string", "description": "One-sentence statement of what this file does"},
+          "public_surface": {
+            "type": "array",
+            "items": {"type": "string"},
+            "description": "Exported names, routes, events, or CLI commands — the observable contract"
+          },
+          "owner": {"type": "string", "description": "Accountable person or team"},
+          "consumers": {
+            "type": "array",
+            "items": {"type": "string"},
+            "description": "Other files or services that import or call this file"
+          },
+          "requirements": {"type": "array", "items": {"type": "string"}},
+          "tests": {"type": "array", "items": {"type": "string"}},
+          "generated": {"type": "boolean", "default": false},
+          "lifecycle": {
+            "enum": ["active", "deprecated", "generated", "planned"],
+            "default": "active"
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  }
+}

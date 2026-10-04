@@ -1,0 +1,15 @@
+id: TASK-DOMAIN-001
+objective: Replace with one observable outcome
+status: proposed
+requirements: []
+depends_on: []
+allowed_paths: []
+forbidden_paths: []
+invariants: []
+acceptance: []
+tests: []
+security_checks: []
+observability: []
+rollback: Not defined
+done_evidence: []
+
